@@ -1,0 +1,34 @@
+[global]
+    ### Display Settings ###
+    monitor = 0
+    follow = mouse
+    
+    # Updated syntax to prevent legacy warnings
+    width = 1200
+    height = (0, 600)
+    origin = top-right
+    offset = (10, 50)
+    
+    scale = 0
+    notification_limit = 5
+
+    ### Base Font ###
+    font = Sans 20
+
+    ### Look & Feel ###
+    background = "#ff0000"
+    foreground = "#ffffff"
+    frame_width = 2
+    frame_color = "#4c566a"
+    corner_radius = 8
+    padding = 15
+    horizontal_padding = 15
+
+### CUSTOM RULE FOR HOME ASSISTANT ###
+[homeassistant_large_alerts]
+    appname = "Home Assistant"
+    frame_color = "#03a9f4"
+    
+    # Since font cannot be changed directly here, we use the 'format' rule 
+    # to wrap the text in a Pango markup size tag to make it massive.
+    format = "<span size='22000' weight='bold'>%s</span>\n%b"
