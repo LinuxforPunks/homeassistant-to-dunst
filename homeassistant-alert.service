@@ -3,7 +3,7 @@ Description=Home Assistant Alert Listener
 After=network.target
 
 [Service]
-ExecStart=/home/player4/homeassistant-alert.sh
+ExecStart=/home/USERNAME/homeassistant-alert.sh
 Restart=always
 
 [Install]
