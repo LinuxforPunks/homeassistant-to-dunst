@@ -1,12 +1,24 @@
 # homeassistant-to-dunst
 
-Some config files for sending a dinner alarm to LAN PCs from homeassistant to dunst
+Some config files for sending a "dinner" alarm via MQTT to multiple LAN PCs from homeassistant to dunst
+Mom presses button on tablet, and the kids' PCs in their rooms get this unmissable pop-up plus audio
+X11 desktop environments normally are good at putting these over the top of a game without crashing the game, but
+there is unlimited potential for malarky.
+MQTT is good for this because a dinner alarm can share/piggyback the nice UI of HomeAssistant, whilst also being
+extensible if in future I want also to flash a red light in dad's shed and drop myself through the ceiling into
+my trousers.
 
 Installation is from the *CLIENT* perspective, the setup in the HomeAssistant server is simple and done through the webgui
 
-Everything here has the status of "NOTE TO SELF" and will only be useful to others if adjusted for what their clients are like
-
 e.g. Arch Linux, LXDE, Pulseaudio
+
+Everything here has the status of "NOTE TO SELF" and will only be useful to others if adjusted for what their clients are like
+There is a classic Linux problem of a project taking a while to set up and needing multiple files, but not being worth
+making into a universal installer-script that would work on all client PCs.
+
+There must be brought together:- the init system + a notification daemon + an audio command + the Desktop Environment
+
+
 
 
 **1. DEPENDENCIES**
@@ -29,7 +41,7 @@ sudo pacman -S mosquitto dunst libnotify vorbis-tools
 
 **3. CONFIGURATION**
 
-Add dunst to the autostart file of the DE (example is for LXDE)
+Add dunst to the autostart file of the DE
 
 Enter correct username into systemd service
 
