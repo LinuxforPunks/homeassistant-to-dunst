@@ -1,5 +1,6 @@
+## this is for LXDE just add the line @dunst to whatever autostart is used on the machine
+
 @lxpanel --profile LXDE
 @pcmanfm --desktop --profile LXDE
 @xscreensaver -no-splash
-@python /home/player4/sideband-notifier.py
 @dunst
