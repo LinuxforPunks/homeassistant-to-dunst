@@ -1,0 +1,11 @@
+alias: DINNER TIME!
+description: Sends a pop-up and audio cue to the Gaming PCs
+triggers:
+  - entity_id: input_button.test_alert_button
+    trigger: state
+actions:
+  - action: mqtt.publish
+    data:
+      topic: desktop/gaming/alerts
+      payload: DINNER TIME!
+
