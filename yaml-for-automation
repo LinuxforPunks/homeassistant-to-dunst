@@ -1,5 +1,5 @@
 alias: DINNER TIME!
-description: Sends a pop-up and audio cue to the Gaming PCs
+description: this triggers the shell script on the PCs. The shell script plays the audio file, but the alert message is defined here
 triggers:
   - entity_id: input_button.test_alert_button
     trigger: state
