@@ -1,12 +1,13 @@
 # homeassistant-to-dunst
 
-config files for sending a dinner alarm to LAN PCs from homeassistant to dunst
+Some config files for sending a dinner alarm to LAN PCs from homeassistant to dunst
 
-1. DEPENDENCIES
+**1. DEPENDENCIES**
 
 sudo pacman -S mosquitto dunst libnotify vorbis-tools
 
-2. FILE PATHS
+
+**2. FILE PATHS**
    
 ~/homeassistant-alert.sh
 
@@ -18,7 +19,15 @@ sudo pacman -S mosquitto dunst libnotify vorbis-tools
 
 ~/.config/dunst/dunstrc
 
-3. CHEATSHEET OF COMMANDS FOR SETTING UP SYSTEMD SERVICES
+
+**3. CONFIGURATION**
+
+Add dunst to the autostart file of the DE (example is for LXDE)
+
+Enter correct username into systemd service
+
+
+**4. CHEATSHEET OF COMMANDS FOR SETTING UP SYSTEMD SERVICES**
 
 sudo chmod +x homeassistant-alert.sh
 
