@@ -43,7 +43,8 @@ sudo pacman -S mosquitto dunst libnotify vorbis-tools
 
 Add dunst to the autostart file of the DE
 
-Enter correct username into systemd service
+Enter correct local username into systemd service
+Enter correct HomeAssistant username and password into shell script
 
 Enter correct topic name into shell script - currently this is for mom to tell kids on the gaming PCs that it is time for dinner therefore **topic: desktop/gaming/alerts**
 
